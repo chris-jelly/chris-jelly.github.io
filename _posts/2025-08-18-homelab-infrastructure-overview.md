@@ -18,15 +18,14 @@ The configuration is all public, You can find my homelab repository here: [Homel
 
 ### Kubernetes Distribution
 
-At present I am running [K3S](https://k3s.io/). It's light-weight which is ideal for my resource limited setup, is easy to install, and is a more streamlined experience compared to some other options. Later I'll likely switch to [Talos](https://www.talos.dev/) so that it's easier
+At present I am running [K3S](https://k3s.io/). It's light-weight which is ideal for my resource limited setup, is easy to install, and is a more streamlined experience compared to some other options. Later I'll likely switch to [Talos](https://www.talos.dev/) 
 to make it simpler to re-deploy the cluster from scratch. Just need to run those ethernet cables...
 
 ### GitOps with FluxCD
 
 The folks at KubeCraft pushed me to jump to GitOps management for my repository from the get-go, the idea of which is to
 declare the configuration in version control, then use a Kubernetes Operator such as Flux or ArgoCD to apply it. This was a steeper learning curve to get over, but the result is very satisfying to build in as it is easier to iteratively build out
-the:w
- configuration. The tool suggested by Mischa was Flux, and I've not had cause to switch from it yet.  
+the configuration. The tool suggested by Mischa was Flux, and I've not had cause to switch from it yet.  
 The folder structure breaks down as such:
 
 ```
