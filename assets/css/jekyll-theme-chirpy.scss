@@ -1,0 +1,23 @@
+---
+---
+
+@use 'main.bundle';
+
+.mermaid {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.5rem;
+}
+
+.mermaid svg {
+  display: block;
+  height: auto;
+  max-width: none;
+  min-width: 56rem;
+}
+
+@media (max-width: 768px) {
+  .mermaid svg {
+    min-width: 42rem;
+  }
+}

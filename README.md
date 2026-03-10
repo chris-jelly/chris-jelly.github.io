@@ -25,9 +25,28 @@ Jekyll site. The following is a list of targets:
 To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
 latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
 
+## Local development
+
+This site uses Ruby `3.3` locally and in CI.
+
+Start a local Jekyll server from the repository root:
+
+```shell
+bundle install
+bundle exec jekyll serve
+```
+
+The site will be available at `http://127.0.0.1:4000` by default.
+
+If you want live reload while editing, run:
+
+```shell
+bundle exec jekyll serve --livereload
+```
+
 ## Usage
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+For theme-specific setup and customization, check the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
 
 ## Contributing
 
