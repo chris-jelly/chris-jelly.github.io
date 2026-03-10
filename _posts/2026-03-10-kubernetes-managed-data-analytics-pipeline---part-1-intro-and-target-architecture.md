@@ -3,7 +3,7 @@ categories:
 - data-engineering
 - devops
 - homelab
-date: 2026-03-10 08:46:55 -0400
+date: 2026-03-10 08:56:05 -0400
 tags:
 - airflow
 - cloudnative-pg
@@ -145,14 +145,13 @@ flowchart TB
 
 ## Project Limitations
 
-When I started this project, it was hard to decide what was "good enough." Between hardware limits and the need to keep the scope small enough to finish, some parts of this setup still fall short of what I would want in a production system:
+This setup is intentionally production-shaped, but it is still a homelab project. To keep the scope finishable and the hardware demands reasonable, I cut a few things I would want in a production system:
 
-- Isolated dev/stage/prod environments with promotion controls
-	- IE: dev Salesforce, dev Airflow, dev data warehouse, etc
-- Proper backup/restore for both Airflow and the data warehouse
-- Observability and alerting you can actually be on-call for
+- Separate dev, staging, and production environments with a real promotion path
+- Backup and restore procedures for both Airflow state and warehouse data
+- Observability and alerting strong enough that you could realistically be on call for it
 
-I will cover some of these gaps in later sections, and I may address a few of them as the project evolves.
+Some of those gaps show up later in the series, and a few may turn into follow-on improvements as the project evolves.
 
 ## What Comes Next
 
