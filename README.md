@@ -44,6 +44,20 @@ If you want live reload while editing, run:
 bundle exec jekyll serve --livereload
 ```
 
+## Content checks
+
+To scan blog posts in `_posts/` for dead links to other posts or broken external pages, run:
+
+```shell
+ruby tools/check_post_links.rb
+```
+
+You can adjust the network behavior for external checks if needed:
+
+```shell
+ruby tools/check_post_links.rb --timeout 15 --concurrency 4
+```
+
 ## Usage
 
 For theme-specific setup and customization, check the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
