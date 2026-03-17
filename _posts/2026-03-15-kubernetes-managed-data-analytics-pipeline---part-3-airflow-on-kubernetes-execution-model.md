@@ -3,7 +3,7 @@ categories:
 - data-engineering
 - devops
 - homelab
-date: 2026-03-17 8:00:00 -0400
+date: 2026-03-17 7:00:00 -0400
 tags:
 - airflow
 - dag-images
